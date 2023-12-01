@@ -1,9 +1,8 @@
-name: Update readme ⭐️ progress
-
+name: Update README Stars
 on:
-    # !Please set a different minute than 51 if you enable this!
-    # schedule:
-    #     - cron: "51 */6 * * *" # Every 6 hours
+    schedule:
+        - cron: '19 5 1-25 12 *'
+
     workflow_dispatch:
 
 jobs:
@@ -21,4 +20,4 @@ jobs:
                   year: ${{ secrets.AOC_YEAR }}
             - uses: stefanzweifel/git-auto-commit-action@v5
               with:
-                  commit_message: "update readme progess"
+                  commit_message: "ci: update AoC stars"
