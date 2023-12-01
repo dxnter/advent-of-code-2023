@@ -15,5 +15,3 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 
 **Total: 0.00ms**
 <!--- benchmarking table --->
-
-Generated from [fspoettel/advent-of-code-rust](https://github.com/fspoettel/advent-of-code-rust).
