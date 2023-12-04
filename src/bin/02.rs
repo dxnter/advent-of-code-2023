@@ -2,16 +2,9 @@
 extern crate lazy_static;
 
 use regex::Regex;
-use std::collections::HashMap;
 advent_of_code::solution!(2);
 
 lazy_static! {
-    pub static ref MAX_COUNTS: HashMap<&'static str, u32> = {
-        [("red", 12), ("green", 13), ("blue", 14)]
-            .iter()
-            .cloned()
-            .collect()
-    };
     pub static ref CUBE_COUNT_RE: Regex = Regex::new(r"(\d+) (red|green|blue)").unwrap();
 }
 
